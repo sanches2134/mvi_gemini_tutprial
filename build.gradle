@@ -1,0 +1,44 @@
+
+
+buildscript {
+    ext {
+        kotlin_version = '1.5.21'
+        min_sdk_version = 21
+        target_sdk_version = 29
+        build_tools_version = "30.0.2"
+        moxyVersion = "2.1.2"
+        koin_version = '2.1.6'
+    }
+
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.0'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.0'
+        classpath "org.koin:koin-gradle-plugin:$koin_version"
+        classpath 'com.google.gms:google-services:4.3.10'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        repositories {
+            maven { url 'https://dl.bintray.com/lisawray/maven' }
+            maven { url "https://jitpack.io" }
+            maven {
+                url "http://maven.google.com/"
+                allowInsecureProtocol = true
+            }
+        }
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

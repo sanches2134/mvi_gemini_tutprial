@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MVI Gemini tutorial</string>
+    <string name="source">SOURCE</string>
+    <string name="published_at">PUBLISHED AT</string>
+    <string name="title">TITLE</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="cat_news">Cat news</string>
+    <string name="failed_to_connect">Failed to connect</string>
+    <string name="retry">Retry</string>
+    <string name="attention">Внимание</string>
+    <string name="warning_message_lost_internet">Нет соединения с интернетом</string>
+    <string name="unknown_error">Неизвестная ошибка</string>
+    <string name="ok">ОК</string>
+
+</resources>
